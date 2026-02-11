@@ -561,7 +561,7 @@
       </div>
       <div class="row">
         <div class="col-lg-8">
-          <form class="content-form" id="contact-form" method="post">
+          <!-- <form class="content-form" id="contact-form" method="post">
             <h4>Let’s Get in Touch</h4>
             <div class="inputbox">
               <input type="text" name="Complete_Name" placeholder="Complete Name" required="">
@@ -586,7 +586,44 @@
               <textarea placeholder="Message"></textarea>
             </div>
             <button type="submit" class="btn bk">Submit Now</button>
-          </form>
+          </form> -->
+          <form class="content-form" id="contact-form" method="post" action="contact.php">
+
+  <h4>Let’s Get in Touch</h4>
+
+  <div class="inputbox">
+    <input type="text" name="Complete_Name" placeholder="Complete Name" required>
+  </div>
+
+  <div class="inputbox">
+    <input type="tel" name="Phone_Number" placeholder="Phone Number" required>
+  </div>
+
+  <div class="inputbox">
+    <input type="email" name="Email_Address" placeholder="Email Address" required>
+  </div>
+
+  <div class="inputbox">
+    <select name="Service" required>
+      <option value="">Select Service</option>
+      <option>Residential Project</option>
+      <option>Commercial Project</option>
+      <option>Industrial Project</option>
+    </select>
+  </div>
+
+  <div class="inputbox">
+    <input type="text" name="User_Location" placeholder="Your Location (City / Area)" required>
+  </div>
+
+  <div class="textareabox">
+    <textarea name="Message" placeholder="Message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn bk">Submit Now</button>
+
+</form>
+
         </div>
         <div class="col-lg-4">
           <div class="content-page-info">

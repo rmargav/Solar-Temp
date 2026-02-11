@@ -1874,11 +1874,11 @@ footer {
   display: block !important;
 }
 
-@media (max-width: 575px) {             /* Mobile: 2 columns (2–2 links) */
+@media (max-width: 575px) {             /* Mobile: 1 columns (1-1 links) */
   .footer-menu {
-    column-count: 2 !important;
-    -webkit-column-count: 2 !important;
-    -moz-column-count: 2 !important;
+    column-count: 1 !important;
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
   }
 
   .footer-menu li {
