@@ -1759,7 +1759,7 @@ Contact Us Section Styles
     font-weight: 600;
 }
 .nice-select:after {
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     border-right: 3px solid #000;
     height: 7px;
     margin-top: -4px;
@@ -1777,6 +1777,7 @@ Contact Us Section Styles
     z-index: 11;
     background-color: #ececec;
 } 
+
 ul.list {
     width: 100%;
 }
