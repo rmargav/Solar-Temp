@@ -55,10 +55,13 @@ General Style
 ------------------------------------------------------------------------------------------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap');
 
-:root {
-    --theme-colour: #FFC80B;
-    --common-colour: #009A4E;
+ :root {
+    --theme-colour: #F58735;
+    --common-colour: #2F3E46;
+    --light-section: #F8F9FA;
+    --white: #FFFFFF;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -200,7 +203,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 54px;
-    background: linear-gradient(180deg, #16222A, #3A6073);
+    background: linear-gradient(180deg, #96b2c8, #D7D2CC);
 }
 .phone span {
     font-size: 16px;
@@ -258,7 +261,7 @@ header .phone a:hover {
     padding-bottom: 15px;
     border-left: 0;
     border-right: 0;
-    background: linear-gradient(360deg, #16222A, #3A6073);
+    background: linear-gradient(180deg, #96b2c8, #D7D2CC);
 }
 .bottom-bar-text {
     display: flex;
@@ -266,7 +269,17 @@ header .phone a:hover {
     position: relative;
     justify-content: space-between;
 }
-
+.logo {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
 /* 03. navbar */
 .overlay {
   position: fixed;
@@ -297,12 +310,7 @@ header .phone a:hover {
     justify-content: center;
     padding: 0;
 }
-.navbar-logo {
-  color: #ff3f34;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 0px 20px;
-}
+
 .navbar-links {
   list-style-type: none;
   display: flex;
@@ -387,10 +395,10 @@ li.menu-item-children > a:before {
 }
 .navbar-links li > a {
     border-bottom: 5px solid transparent;
-    color: white;
+    color: var(--common-colour);
     text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.5vw;
+    font-weight: 600;
 }
 li.sub-menu-item-children:after {
     content: "";
@@ -471,7 +479,7 @@ header .line {
 .footer-menu a.active,
 .mobile-menu a.active {
   color: var(--theme-colour);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* 05. mobile-nav */
@@ -1920,7 +1928,7 @@ footer:before {
 /* 28. footer-top */
 .footer-top {
     background-color: var(--common-colour);
-    padding: 80px 0;
+    padding: 1.5vw 0;
     z-index: 111;
 }
 .footer-top {
@@ -1929,7 +1937,23 @@ footer:before {
     position: relative;
     margin-bottom: 100px;
 }
-.logo p {
+.footer-logo img {
+    width: 18%; 
+    max-width: 100%;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.footer-logo img:hover {
+    transform: translatex(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.footer-logo p {
     color: #fff;
     padding-top: 20px;
     width: 85%;
@@ -1941,7 +1965,7 @@ footer:before {
     top: 0;
     width: 16%;
     height: 100%;
-    background-color: #009a4e;
+    background-color: var(--common-colour);
     right: 100%;
     z-index: -2;
 }

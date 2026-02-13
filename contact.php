@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $to = "abc@gmail.com";   // PUT YOUR EMAIL HERE
+    $to = "bharatenergy8889@gmail.com";   // PUT YOUR EMAIL HERE
     $subject = "New Contact Form Submission";
 
     // Collect form data
