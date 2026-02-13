@@ -276,10 +276,7 @@ header .phone a:hover {
     align-items: center;
     justify-content: center;
 }
-.logo img {
-    width: 100px;
-    height: 100px;
-}
+
 /* 03. navbar */
 .overlay {
   position: fixed;
@@ -710,7 +707,7 @@ li.menu-item-has-children.active {
     font-size: 28px;
 }
 .bar-menu i {
-    color: black;
+    color: #000;
     background-color: transparent;
     font-size: 24px;
 }
@@ -2103,7 +2100,7 @@ Privacy and TnC + WP button Section Styles
       left: 32px;
       bottom: 20px;
       z-index: 9999;
-      background: #c1ff76;
+      background: #0a8447;
       /* Green background */
       color: #111111;
       /* Black icon color */
@@ -2126,7 +2123,7 @@ Privacy and TnC + WP button Section Styles
 
     /* WhatsApp Icon (Initially Black) */
     .whatsapp-chat-btn .fa-whatsapp {
-      color: black;
+      color: white;
       /* Icon is black initially */
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
     }
@@ -2135,13 +2132,12 @@ Privacy and TnC + WP button Section Styles
     .whatsapp-chat-btn:hover {
       box-shadow: 0 12px 40px rgba(18, 140, 126, 0.28);
       transform: scale(1.09);
-      background: #111111;
+      background: var(--light-section);
       /* Background turns black */
     }
 
     .whatsapp-chat-btn:hover .fa-whatsapp {
       color: white;
-      /* Icon turns white when hovered */
     }
 
     .whatsapp-chat-btn::before {
@@ -2153,7 +2149,8 @@ Privacy and TnC + WP button Section Styles
       height: 100%;
       border-radius: 50%;
       padding: 0.5px;
-      background: #c1ff76;
+      background: #0a8447;
+      border: 2px solid white;
       /* Green background */
       z-index: -1;
       transition: background 0.2s;
@@ -2174,7 +2171,7 @@ Privacy and TnC + WP button Section Styles
       bottom: 50%;
       transform: translateY(50%);
       background: rgba(17, 17, 17, 0.7);
-      color: #c1ff76;
+      color: #0a8447;
       padding: 0.5em 1em;
       border-radius: 8px;
       font-size: 1rem;
