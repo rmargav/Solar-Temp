@@ -2142,7 +2142,7 @@ Privacy and TnC + WP button Section Styles
     /* Hover Effect: Background Black, Icon White */
     .whatsapp-chat-btn:hover {
       box-shadow: 0 12px 40px rgba(18, 140, 126, 0.28);
-      transform: scale(1.09);
+      transform: scale(1.05);
       background: var(--light-section);
       /* Background turns black */
     }
@@ -2182,7 +2182,7 @@ Privacy and TnC + WP button Section Styles
       bottom: 50%;
       transform: translateY(50%);
       background: rgba(17, 17, 17, 0.7);
-      color: #0a8447;
+      color: #fff;
       padding: 0.5em 1em;
       border-radius: 8px;
       font-size: 1rem;
